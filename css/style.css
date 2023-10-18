@@ -8,8 +8,8 @@
 
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "Roboto";
+  src: url("../font/roboto-regular-webfont.woff2") format("woff2"), url("../font/roboto-regular-webfont.woff") format("woff");
 }
 
 /* ******************************** */
@@ -17,3 +17,90 @@
 /* Colores */
 
 /* ******************************** */
+:root {
+  --color-blanco: #ffffff;
+  --color-gris: #f2f2f2;
+  --color-negro: #000000;
+  --color-rojo: #f23d3d;
+  --color-rojo-oscuro: #732929;
+  --color-turquesa: #4bbfb4;
+  --color-turquesa-oscuro: #3b8c84;
+}
+
+html{
+  font-family: "Roboto", sans-serif;
+}
+
+.header__banner{
+  & img{
+    width: 100%;
+  }
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton{
+  padding: 20px 40px;
+  color: var(--color-negro);
+  background: var(--color-turquesa);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1;
+}
+
+footer{
+  height: 65px;
+  background: var(--color-turquesa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  padding: .625rem;
+}
+
+main p{
+  padding: 20px;
+}
+
+.formulario{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 0;
+}
+
+.formulario input, textarea{
+  padding: 10px;
+  grid-column: 1/-1;
+  background-color: var(--color-gris);
+  border: 0;
+}
+
+.formulario button{
+  grid-column: 1/-1;
+  background: var(--color-rojo);
+  font-size: 16px;
+}
+
+.formulario p{
+  grid-column: 1/-1;
+  padding: 0;
+  font-size: 16px;
+}
+
+::placeholder{
+  font-size: 16px;
+}
