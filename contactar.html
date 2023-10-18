@@ -9,27 +9,31 @@
   <body>
     <div id="container">
       <header>
-        <!-- banner -->
-        <picture class="header__banner">
-          <!-- smartphone -->
-          <source
-            srcset="img/smartphone/banner.webp 1x"
-            media="(min-width:320px) and (orientation:portrait)"
-          />
 
-          <img src="" alt="montañas nevadas" decoding="async" loading="lazy" />
-        </picture>
+        <!-- banner -->
+        <a href="contactar.html">
+          <picture class="header__banner">
+            <!-- smartphone -->
+            <source
+              srcset="img/smartphone/banner.webp 1x"
+              media="(min-width:320px) and (orientation:portrait)"
+            />
+          
+            <img src="" alt="montañas nevadas" decoding="async" loading="lazy" />
+          </picture>
+          
+        </a href="contactar.html">
 
         <nav>
           <a href="servicios.html" class="header__servicios boton">Servicios</a>
-          <a href="contactar.html" class="header__contactar boton">Contactar</a>
+          <a href="" class="header__contactar boton">Contactar</a>
         </nav>
       </header>
 
       <main>
         <form action="" class="formulario" method="post">
-          <input type="text" placeholder="Nombre y apellidos" />
-          <input type="text" placeholder="Correo electrónico" />
+          <input type="text" name="nombre y apellidos" placeholder="Nombre y apellidos" autofocus />
+          <input type="text" name="correo" placeholder="Correo electrónico" />
           <textarea name="text" id="" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
           <button type="submit">Enviar</button>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

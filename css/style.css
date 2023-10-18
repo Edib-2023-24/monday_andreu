@@ -79,11 +79,11 @@ main p{
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: [los inputs] repeat(2, 50px) [la textarea]250px;
   gap: 20px 0;
 }
 
 .formulario input, textarea{
-  padding: 10px;
   grid-column: 1/-1;
   background-color: var(--color-gris);
   border: 0;
